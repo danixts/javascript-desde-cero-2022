@@ -1,0 +1,1 @@
+console.log("Hola desde JavaScript 😎", "Otro texto")
