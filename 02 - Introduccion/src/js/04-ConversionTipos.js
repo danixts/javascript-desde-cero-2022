@@ -30,7 +30,7 @@ booleano = Boolean(null);
 print(booleano);
 
 // como dato
-let a = +"10.11";
+let a = +"10.11"; // + operador unario
 let b = 10;
 console.log(a + a + b);
 print(a);
