@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --s-middle: 1rem;
+  --r: 0.75rem;
+}
+
+body {
+  background: linear-gradient(to bottom, #374151 0%, #111827 100%);
+  font-family: "Helvetica";
+}
+
+.main {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.notes {
+  display: flex;
+  width: 100%;
+  height: 350px;
+  max-width: 880px;
+  margin: 0 auto;
+  position: relative;
+  user-select: none;
+  margin-bottom: 4rem;
+}
+
+.key {
+  background: linear-gradient(to bottom, #fff 0%, #d1d5db 100%);
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 0 0 var(--r) var(--r);
+  transition: all 0.5s ease;
+  border: 4px solid #111827;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+.note__press {
+  color: #f0db4f;
+  /* background-color: red; */
+  padding: 1rem 6rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 132px;
+}
+
+.title {
+  color: white;
+  padding-bottom: 2rem;
+}
+.title__js {
+  /* color: #323330; */
+  color: #f0db4f;
+  font-size: 2.5rem;
+}
+.note__text {
+  font-size: 4rem;
+  /* border-bottom: 3px dashed white; */
+  transition: all 0.8s linear;
+
+  transform: translateY(-15px);
+  opacity: 0;
+  height: 74px;
+}
+
+.note__text.active {
+  opacity: 1;
+  transform: translateY(0);
+  font-size: 4rem;
+}
+.note__bottom {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.key:hover {
+  border: 4px solid #3b82f6;
+  box-shadow: 0 4px 8px 2px rgba(255, 255, 255, 0.14);
+  color: transparent;
+}
+
+.key.middle:hover {
+  color: transparent;
+}
+
+.key.active {
+  border: 4px solid #3b82f6;
+  box-shadow: 0 0 4px 8px 2px rgba(255, 255, 255, 0.14);
+  color: transparent;
+}
+
+.key.middle {
+  background: linear-gradient(to bottom, #4b5563 0%, black 100%);
+  position: absolute;
+  background-color: black;
+  color: white;
+  height: 60%;
+  width: 6%;
+}
+
+.key[data-key="KeyW"] {
+  left: 7%;
+}
+
+.key[data-key="KeyE"] {
+  left: 17%;
+}
+
+.key[data-key="KeyT"] {
+  left: 37.3%;
+}
+
+.key[data-key="KeyY"] {
+  left: 47.5%;
+}
+
+.key[data-key="KeyU"] {
+  left: 58.5%;
+}
+
+.key[data-key="KeyO"] {
+  left: 77.5%;
+}
+
+.key[data-key="KeyP"] {
+  left: 87.5%;
+}

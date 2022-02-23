@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div class="main">
+    <h1 class="title">
+      Piano musical en <span class="title__js">JavaScript</span>
+    </h1>
+    <div id="notepress" class="note__press">
+      <span class="note__text"></span>
+      <span class="note__bottom">Nota musical</span>
+    </div>
+    <div class="notes">
+      <div data-key="KeyA" class="key" data-note="C">
+        <span class="key__decorate">A</span>
+      </div>
+      <div data-key="KeyW" class="key middle" data-note="C#">
+        <span class="key__decorate">W</span>
+      </div>
+      <div data-key="KeyS" class="key" data-note="D">
+        <span class="key__decorate">S</span>
+      </div>
+      <div data-key="KeyE" class="key middle" data-note="D#">
+        <span class="key__decorate">E</span>
+      </div>
+      <div data-key="KeyD" class="key" data-note="E">
+        <span class="key__decorate">D</span>
+      </div>
+      <div data-key="KeyF" class="key" data-note="F">
+        <span class="key__decorate">F</span>
+      </div>
+      <div data-key="KeyT" class="key middle" data-note="F#">
+        <span class="key__decorate">T</span>
+      </div>
+      <div data-key="KeyG" class="key" data-note="G">
+        <span class="key__decorate">G</span>
+      </div>
+      <div data-key="KeyY" class="key middle" data-note="G#">
+        <span class="key__decorate">Y</span>
+      </div>
+      <div data-key="KeyH" class="key" data-note="A">
+        <span class="key__decorate">H</span>
+      </div>
+      <div data-key="KeyU" class="key middle" data-note="A#">
+        <span class="key__decorate">U</span>
+      </div>
+      <div data-key="KeyJ" class="key" data-note="B">
+        <span class="key__decorate">J</span>
+      </div>
+      <div data-key="KeyK" class="key" data-note="C">
+        <span class="key__decorate">K</span>
+      </div>
+      <div data-key="KeyO" class="key middle" data-note="C#">
+        <span class="key__decorate">O</span>
+      </div>
+      <div data-key="KeyL" class="key" data-note="D">
+        <span class="key__decorate">L</span>
+      </div>
+      <div data-key="KeyP" class="key middle" data-note="D#">
+        <span class="key__decorate">P</span>
+      </div>
+      <div data-key="Semicolon" class="key" data-note="E">
+        <span class="key__decorate">Ñ</span>
+      </div>
+    </div>
+  </div>
+  <section>
+    <audio data-key="KeyA" src="./src/assets/audios/040.wav"></audio>
+    <audio data-key="KeyW" src="./src/assets/audios/041.wav"></audio>
+    <audio data-key="KeyS" src="./src/assets/audios/042.wav"></audio>
+    <audio data-key="KeyE" src="./src/assets/audios/043.wav"></audio>
+    <audio data-key="KeyD" src="./src/assets/audios/044.wav"></audio>
+    <audio data-key="KeyF" src="./src/assets/audios/045.wav"></audio>
+    <audio data-key="KeyT" src="./src/assets/audios/046.wav"></audio>
+    <audio data-key="KeyG" src="./src/assets/audios/047.wav"></audio>
+    <audio data-key="KeyY" src="./src/assets/audios/048.wav"></audio>
+    <audio data-key="KeyH" src="./src/assets/audios/049.wav"></audio>
+    <audio data-key="KeyU" src="./src/assets/audios/050.wav"></audio>
+    <audio data-key="KeyJ" src="./src/assets/audios/051.wav"></audio>
+    <audio data-key="KeyK" src="./src/assets/audios/052.wav"></audio>
+    <audio data-key="KeyO" src="./src/assets/audios/053.wav"></audio>
+    <audio data-key="KeyL" src="./src/assets/audios/054.wav"></audio>
+    <audio data-key="KeyP" src="./src/assets/audios/055.wav"></audio>
+    <audio data-key="Semicolon" src="./src/assets/audios/056.wav"></audio>
+  </section>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
