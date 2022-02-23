@@ -8,6 +8,15 @@ module.exports = {
       padding: "1rem",
     },
     extend: {
+      keyframes: {
+        zoom: {
+          from: { transform: "scale(0)", opacity: 0 },
+          to: { transform: "scale(1)", opacity: 1 },
+        },
+      },
+      animation: {
+        zoom: "animation: zoom .3s linear;",
+      },
       colors: {
         primary: colors.orange,
       },
