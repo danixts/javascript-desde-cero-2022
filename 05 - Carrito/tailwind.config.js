@@ -18,8 +18,8 @@ module.exports = {
         zoom: "animation: zoom .3s linear;",
       },
       colors: {
-        primary: colors.amber,
-        secondary: colors.orange,
+        primary: colors.red,
+        secondary: colors.cyan,
       },
       gridTemplateRows: {
         "template-3": "115px auto 60px",
